@@ -1,0 +1,139 @@
+/* style.css */
+
+/* Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to right, #1d3557, #457b9d);
+    color: #f1faee;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #1d3557;
+    padding: 2rem 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-card {
+    background-color: #f1faee;
+    color: #1d3557;
+    border-radius: 15px;
+    padding: 1rem 1.5rem;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+    width: 100%;
+}
+
+.profile-img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 15px;
+    border: 3px solid #1d3557;
+}
+
+.profile-info h1 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.profile-info p {
+    margin: 0.3rem 0 0 0;
+    font-size: 1rem;
+}
+
+/* Navigation */
+nav {
+    background-color: #457b9d;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav a {
+    color: #f1faee;
+    text-decoration: none;
+    margin: 0 1rem;
+    font-weight: bold;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+nav a:hover {
+    color: #a8dadc;
+    transform: scale(1.05);
+}
+
+/* Sections */
+section {
+    padding: 2rem 1rem;
+}
+
+.card {
+    background-color: #f1faee;
+    color: #1d3557;
+    padding: 1.5rem;
+    border-radius: 15px;
+    margin-bottom: 2rem;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.skills {
+    background-color: #e6f0ff;
+    color: #003366;
+}
+
+.skills h2 {
+    margin-top: 0;
+}
+
+.skills ul {
+    list-style-type: none;
+    padding-left: 0;
+    font-size: 17px;
+}
+
+.skills ul li {
+    margin-bottom: 8px;
+}
+
+.contact a {
+    color: #1d3557;
+    text-decoration: underline;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #1d3557;
+    font-size: 0.9rem;
+}
+
+.hire-button {
+    display: inline-block;
+    background-color: #1d3557;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    margin-top: 15px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.hire-button:hover {
+    background-color: #274f87;
+    transform: scale(1.05);
+}

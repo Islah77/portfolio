@@ -1,0 +1,68 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Islah Henri | Web Developer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>  <!-- Header with Image and Info inside a card -->  <header>
+    <div class="profile-card">
+      <img src="https://i.ibb.co/Fb5GXf95/IMG-20250728-180128.jpg" alt="Islah Henri" class="profile-img" />
+      <div class="profile-info">
+        <h1>Islah Henri</h1>
+        <p>Web Developer | HTML • CSS • JavaScript</p>
+      </div>
+    </div>
+  </header>  <!-- Navigation -->  <nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+  </nav>  <!-- About Section -->  <section id="about">
+    <div class="card">
+      <h2>About Me</h2>
+      <p>I am a passionate front-end developer with experience creating responsive websites for clients worldwide. I specialize in HTML, CSS, and JavaScript. I’m ready to help you build a clean and modern website for your business.</p>
+    </div>
+  </section>  <!-- Projects Section -->  <section id="projects">
+    <div class="card">
+      <h2>Projects</h2>
+      <ul>
+        <li>✔️ Personal Portfolio Website</li>
+        <li>✔️ Business Landing Page</li>
+        <li>✔️ Mobile-Friendly E-commerce UI</li>
+        <li>✔️ Blog & Article Templates</li>
+      </ul>
+    </div>
+  </section>  <!-- Skills Section -->  <section id="skills" class="card skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>✅ HTML5 & Semantic Markup</li>
+      <li>✅ CSS3 & Responsive Design</li>
+      <li>✅ JavaScript Basics</li>
+      <li>✅ Landing Page Design</li>
+      <li>✅ Mobile-Friendly Layouts</li>
+      <li>✅ Portfolio Website Development</li>
+      <li>✅ Version Control with Git (Basic)</li>
+      <li>✅ Web Accessibility Principles</li>
+    </ul>
+  </section>  <!-- Contact Section -->  <section id="contact">
+    <div class="card contact">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:islamhcrazhenrii@gmail.com">islamhcrazhenrii@gmail.com</a></p>
+      <p>WhatsApp: <a href="https://wa.me/2614756659" target="_blank">+261 47 566 59</a></p>
+      <p>Available for freelance jobs on Upwork. Let's work together!</p>
+      <a href="https://www.upwork.com/freelancers/~0127174eedda013293" target="_blank" class="hire-button">💼 Hire Me on Upwork</a>
+    </div>
+  </section>  <!-- Footer -->  <footer>
+    <p>Looking for a reliable web developer? Contact me today!</p>
+    <p>&copy; 2025 Islah Henri. All rights reserved.</p>
+  </footer>  <!-- Scroll Animation JS -->  <script>
+    const sections = document.querySelectorAll("section");
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if(entry.isIntersecting) entry.target.classList.add("visible");
+        });
+    }, { threshold: 0.1 });
+    sections.forEach(section => observer.observe(section));
+  </script></body>
+</html>
